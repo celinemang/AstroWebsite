@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Results</title>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
+    {{ hist_script | safe }}
+    {{ plot_script | safe }}
+</head>
+<body>
+    <h1>Analysis Results</h1>
+    <div>
+        {{ hist_div | safe }}
+    </div>
+    <div>
+        {{ plot_div | safe }}
+    </div>
+</body>
+</html>

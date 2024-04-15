@@ -1,0 +1,157 @@
+.bg-dark {
+  background-color: #0b051c !important;
+}
+
+.text-glow { 
+  text-shadow: 0 0 10px #fff; 
+  text-emphasis-color: white;
+  color: rgb(238, 238, 243);
+}
+
+/* Ensure you add more styles here to match the design exactly as per the screenshot */
+
+body{
+  display: grid;
+  
+}
+.container{
+  max-width: 100 hv;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 100 hv;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 100 vw;
+  align-items: center;
+  padding: 1.2rem 0;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header>h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+header>ul{
+  display: flex;
+  list-style-type: none;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+header>ul>li{
+  list-style-type: none;
+  text-align: right;
+  margin-left: 1.5rem;
+  font-weight: 800;
+  padding-bottom: 5px;
+  
+}
+
+header>ul>li>a{
+  color:#fff;
+  text-decoration: none;
+}
+
+header>ul>li:first-child>a{
+  border-bottom: 2px solid gray;
+}
+header>ul>li>a:hover{
+  border-bottom: 2px solid gray;
+}
+
+@media screen and (max-width: 500px) {
+  header{
+    flex-direction: column;
+  }
+}
+
+nav{
+  display: flex;
+  padding: 0 3rem;
+  text-align: left;
+
+}
+nav>div>h2{
+  font-size: 1.5rem;
+  font-weight: 300;
+
+}
+nav>div>p{
+  font-size: 1rem;
+  font-weight: 300;
+  height: 14;
+  
+}
+
+section{
+  flex:10;
+  padding: auto;
+  text-align: center;
+}
+
+section>div>form>input{
+  display: block;
+  border: 1px solid rgb(127, 161, 226);
+  width: 150px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+
+}
+
+label {
+  display: inline-block;
+  background-color: #007bff; 
+  color: white;
+  padding: 8px 12px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  font-size: 1rem;
+  transition: background-color 0.3s; 
+}
+label:hover {
+  background-color: #0056b3; 
+}
+
+label>i {
+  margin-right: 5px; 
+}
+
+section>div>form>input>submit{
+ 
+  background-color: #007bff; 
+  color: white;
+
+}
+aside{
+  flex: 1;
+  color: #fff;
+
+}
+
+.content-wrap{
+  flex:1;
+}
+
+footer{
+
+  font-size: x-small;
+  margin-bottom: 2rem;
+  text-align: center;
+  place-content: bottom;
+  
+
+}
